@@ -1,0 +1,7 @@
+++ Не загружаются задачи с сервера => store.tsx line 84: await for .json():Promise
+++ Не добавляются новые задачи, счетчик увеличивается => store.tsx line 104: useMemo(.fn, [todos])
+++ После добавления задачи поле не очищается => add-todo.tsx line 17: (setText(""))
+++ Поле вырезает не все цифры (можно вставить копированием) => add-todo.tsx line 11: (flag "g")
+++ Новые задачи должны быть сверху => store.tsx line 96: sortList(){} или добавить новую задачу перед листом :) setTodos(prev => [newTodo, ...prev])
+++ Лишние перезагрузки страницы => add-todo.tsx line 15: from prevent.default()
+++? На каждое изменение поля происходит лишний рендер кнопки => add-form.tsx: move form to add-form.tsx and pass button as children?
